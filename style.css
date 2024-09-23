@@ -1,0 +1,49 @@
+/* Fullscreen Video Background */
+#backgroundVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+/* Centering the Heading and Button */
+.content {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Heading Style with new font and color */
+#mainHeading {
+  font-family: 'Poppins', sans-serif; /* Modern and clean font */
+  font-size: 4em;
+  font-weight: 700;
+  background: linear-gradient(90deg, #f9f3e4 0%, #f9d29d 100%); /* Light beige to orange gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Makes gradient apply to text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Subtle shadow for better readability */
+  margin-bottom: 20px;
+}
+
+/* Explore Button Style */
+#exploreButton {
+  padding: 15px 30px;
+  font-size: 1.5em;
+  color: #f9f3e4; /* Soft beige to contrast with the orange background */
+  background-color: transparent;
+  border: none; /* Same soft beige for the border */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect for Explore Button */
+#exploreButton:hover {
+  color: #f9d29d; /* Slightly darker beige/orange */
+  border-color: #f9d29d; /* Matches the hover color */
+}
